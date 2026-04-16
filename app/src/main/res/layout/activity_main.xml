@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A0A2E"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="◆ ÉTUDIANTS ◆"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GESTION  ·  ACADÉMIQUE"
+            android:textColor="#9B6DD1"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:letterSpacing="0.25"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8A2BE2"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Card Ajout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_mauve"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOM DE FAMILLE"
+                android:textColor="#C39EFF"
+                android:textSize="11sp"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/inputNom"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Entrer le nom..."
+                android:textColorHint="#6A3FA0"
+                android:textColor="#EEDEFF"
+                android:background="@drawable/input_mauve"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRÉNOM"
+                android:textColor="#C39EFF"
+                android:textSize="11sp"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/inputPrenom"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Entrer le prénom..."
+                android:textColorHint="#6A3FA0"
+                android:textColor="#EEDEFF"
+                android:background="@drawable/input_mauve"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnAjouter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="✦  VALIDER"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:letterSpacing="0.15"
+                android:background="@drawable/btn_primary_mauve"/>
+
+        </LinearLayout>
+
+        <!-- Divider section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#4A1A8A"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  RECHERCHE &amp; GESTION  "
+                android:textColor="#9B6DD1"
+                android:textSize="10sp"
+                android:letterSpacing="0.2"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#4A1A8A"/>
+
+        </LinearLayout>
+
+        <!-- Card Recherche / Suppression -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_mauve"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IDENTIFIANT ÉTUDIANT"
+                android:textColor="#C39EFF"
+                android:textSize="11sp"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/inputId"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="ID numérique..."
+                android:textColorHint="#6A3FA0"
+                android:textColor="#EEDEFF"
+                android:inputType="number"
+                android:background="@drawable/input_mauve"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnChercher"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="◆ CHERCHER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:letterSpacing="0.1"
+                    android:background="@drawable/btn_secondary_mauve"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnSupprimer"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="✕ SUPPRIMER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:letterSpacing="0.1"
+                    android:background="@drawable/btn_danger_mauve"/>
+
+            </LinearLayout>
+
+            <!-- Résultat -->
+            <TextView
+                android:id="@+id/resultat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="52dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:background="@drawable/result_mauve"
+                android:padding="14dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
