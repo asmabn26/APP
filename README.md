@@ -1,3 +1,4 @@
+
 #  Application Android – Gestion des Étudiants (SQLite)
 
 ##  Objectif
@@ -11,3 +12,7 @@ L’application implémente les opérations CRUD :
 * ❌ Supprimer un étudiant
 
 ## Demo
+
+
+https://github.com/user-attachments/assets/ba9e43b1-e5d7-4935-8bd9-77f6850e35b5
+
